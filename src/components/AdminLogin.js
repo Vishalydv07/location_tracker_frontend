@@ -11,7 +11,7 @@ function AdminLogin({ setToken, setRole }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/users/login', form);
+      const res = await axios.post('https://backend-omega-seven-39.vercel.app/api/users/login', form);
       if (res.data.role === 'admin') {
         setToken(res.data.token);
         setRole(res.data.role);

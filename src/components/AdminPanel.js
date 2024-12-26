@@ -9,7 +9,7 @@ function AdminPanel({ token }) {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/admin/users', {
+      .get('https://backend-omega-seven-39.vercel.app/api/admin/users', {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -20,7 +20,7 @@ function AdminPanel({ token }) {
       });
 
     axios
-      .get('http://localhost:5000/api/admin/locations', {
+      .get('https://backend-omega-seven-39.vercel.app/api/admin/locations', {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {

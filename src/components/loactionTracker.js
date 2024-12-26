@@ -7,7 +7,7 @@ const LocationTracker = ({ token }) => {
       navigator.geolocation.getCurrentPosition(async (position) => {
         try {
           await axios.post(
-            'http://localhost:5000/api/locations',
+            'https://backend-omega-seven-39.vercel.app/api/locations',
             {
               latitude: position.coords.latitude,
               longitude: position.coords.longitude,

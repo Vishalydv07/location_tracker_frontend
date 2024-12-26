@@ -12,7 +12,7 @@ const Register = () => {
     e.preventDefault();
     navigator.geolocation.getCurrentPosition(async (position) => {
       try {
-        await axios.post('http://localhost:5000/api/users/register', {
+        await axios.post('https://backend-omega-seven-39.vercel.app/api/users/register', {
           ...form,
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
