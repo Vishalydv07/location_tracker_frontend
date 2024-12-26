@@ -24,12 +24,27 @@ function AdminLogin({ setToken, setRole }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Admin Login</h2>
-      <input name="username" placeholder="Username" onChange={handleChange} required />
-      <input name="password" type="password" placeholder="Password" onChange={handleChange} required />
-      <button type="submit">Login as Admin</button>
+    <div className="auth-container">
+    <h2>Admin Login</h2>
+    <form onSubmit={handleSubmit} className="auth-form">
+      <input
+        name="username"
+        placeholder="Username"
+        onChange={handleChange}
+        required
+        className="auth-input"
+      />
+      <input
+        name="password"
+        type="password"
+        placeholder="Password"
+        onChange={handleChange}
+        required
+        className="auth-input"
+      />
+      <button type="submit" className="auth-button">Login</button>
     </form>
+  </div>
   );
 }
 

@@ -26,12 +26,27 @@ function Login({ setToken, setRole }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="auth-container">
       <h2>Login</h2>
-      <input name="username" placeholder="Username" onChange={handleChange} required />
-      <input name="password" type="password" placeholder="Password" onChange={handleChange} required />
-      <button type="submit">Login</button>
-    </form>
+      <form onSubmit={handleSubmit} className="auth-form">
+        <input
+          name="username"
+          placeholder="Username"
+          onChange={handleChange}
+          required
+          className="auth-input"
+        />
+        <input
+          name="password"
+          type="password"
+          placeholder="Password"
+          onChange={handleChange}
+          required
+          className="auth-input"
+        />
+        <button type="submit" className="auth-button">Login</button>
+      </form>
+    </div>
   );
 }
 

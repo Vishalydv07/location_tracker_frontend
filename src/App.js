@@ -13,13 +13,21 @@ function App() {
   if (!token) {
     return (
       <div className="App">
-        <h1>User Interface</h1>
-        <Register />
-        <Login setToken={setToken} setRole={setRole} />
+      <h1>User Interface</h1>
+      <div className="auth-panels">
+        <div className="auth-container">
+          <Register />
+        </div>
+        <div className="auth-container">
+          <Login setToken={setToken} setRole={setRole} />
+        </div>
+      </div>
 
-        <h1>Admin Interface</h1>
+      <h1>Admin Interface</h1>
+      <div className="auth-container">
         <AdminLogin setToken={setToken} setRole={setRole} />
       </div>
+    </div>
     );
   }
 
