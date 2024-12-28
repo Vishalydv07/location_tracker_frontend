@@ -15,7 +15,7 @@ body {
   .auth-container {
     background-color: #1e1e1e;
     padding: 30px 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -32,7 +32,7 @@ body {
   
   /* Input Fields */
   .auth-input {
-    width: 100%;
+    width: 50%;
     padding: 12px 15px;
     margin-bottom: 15px;
     border: 1px solid #555;
@@ -54,7 +54,7 @@ body {
   
   /* Buttons */
   .auth-button {
-    width: 100%;
+    width: 20%;
     padding: 12px;
     background-color: #007bff;
     color: #ffffff;

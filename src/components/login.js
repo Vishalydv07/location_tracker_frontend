@@ -26,7 +26,7 @@ function Login({ setToken, setRole }) {
   };
 
   return (
-    <div className="auth-container">
+    <div >
       <h2>Login</h2>
       <form onSubmit={handleSubmit} className="auth-form">
         <input
